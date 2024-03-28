@@ -15,6 +15,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
             z-index: 9999;
+            max-width: 80%; /* Lebar maksimum */
         }
 
         #confirmation button {
@@ -22,6 +23,7 @@
             padding: 10px 20px;
             cursor: pointer;
         }
+
         .back-button {
             margin-top: 20px;
             background-color: #363636; /* Warna pink */
@@ -30,9 +32,18 @@
             border-radius: 5px; /* Sudut border */
             text-decoration: none; /* Menghapus garis bawah */
             transition: background-color 0.3s; /* Animasi saat hover */
+            display: block;
+            text-align: center;
         }
+
         .back-button:hover {
             background-color: #181818; /* Warna pink yang lebih terang saat hover */
+        }
+
+        @media (max-width: 768px) { /* Gaya untuk perangkat seluler */
+            #confirmation {
+                padding: 10px;
+            }
         }
     </style>
 </head>
