@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        #confirmation {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+
+        #confirmation button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .back-button {
+            margin-top: 20px;
+            background-color: #363636; /* Warna pink */
+            color: white; /* Warna teks putih */
+            padding: 10px 20px; /* Ukuran padding */
+            border-radius: 5px; /* Sudut border */
+            text-decoration: none; /* Menghapus garis bawah */
+            transition: background-color 0.3s; /* Animasi saat hover */
+        }
+        .back-button:hover {
+            background-color: #181818; /* Warna pink yang lebih terang saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="confirmation">
+        <p>APAKAH KAMU SUDAH SEMPRO?</p>
+        <a href="/metsemproo/congrats.html" class="back-button">Sudah</a>
+        <a href="/metsemproo/wrong.html" class="back-button">Belum</a>
+    </div>
+</body>
+</html>
